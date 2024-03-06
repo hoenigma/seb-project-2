@@ -1,0 +1,63 @@
+//-----HOME-Page--------------------------//
+//Link to character list
+//Title and subtitile
+//background Image
+//Invest more time in styling after MVP 
+
+//-----CHARACTER LIST-Page-----------------//
+//Typescript?
+//API: function for Fetch and useEffect, useState for characters
+//Data to pass: Character Name, Image (maybe amiiboseries) (after MVP-maybe limit characters on screen)
+//JSX: Map the array and link to Character Display/Character Card 
+// add click function
+
+//Seach bar: function for search (filtering) and handleChange-useState for search
+//inJSX-input
+//Drop down: for different series-useState for searchin sereis
+//inJSX-look at bulma for dropdown
+
+//-----CHARACTER DISPLAY (on its own)-Page--------------//
+//CSS Idea-Box: Image on left, details list on the right 
+
+//Image
+//character/Name
+//amiibo series
+//game series
+//release? (object in an object)
+//Type
+
+//-----THUMBNAIL CARD (for the list page)-Component------------//
+//Passed through from character List:
+//Name
+//Image
+//Series?
+
+//CSS-little cards using columns, like the cheese
+
+//-----NAVBAR-Component--------------------//
+//Link home page
+//Link character list
+//After MVP-Random Character
+
+
+//-----index.HTML-some html, link CSS(BULMA), link APP-------//
+//Main.tsx//
+
+//WEDNESDAY
+
+//1) Set up all pages and componets  ✅
+//2) Add NAVBAR ✅
+//3) Add title to homepage 
+//4) CHARCTER LIST: Link to API
+//5) Get cards up-use bulma to style them
+
+//THURSDAY
+
+//1) get character display page working (by clicking)
+//2) Search function
+//--------------MVP ACHIEVED------------------------//
+// add drop bar
+// style
+// add random function
+// Limit on page
+// media query
