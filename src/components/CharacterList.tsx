@@ -34,23 +34,28 @@ function filterCharacters() {
 
 
 return (
-  <section>
-    <div>
-      <input
+  <section className="section">
+    <div className="container">
+      <div className="searchbar">
+      <input id="searchBar"
+      className="input is-normal"
       placeholder="Search for an Amiibo"
       onChange={handleChange}
       value={search}
       />
+      </div>
     </div>
     <div>
+      <div className="columns is-multiline">
       {/* we changed this from amiibo?.map */}
       {filterCharacters()?.map((dataTest) => {
-        return <div>
+        return <div className="column is-one-quarter-desktop is-one-third-tablet">
         <CharacterThumbnail
         name={dataTest.name}
        image={dataTest.image} />
        </div> 
       })}
+      </div>
     </div>
   </section>
 )

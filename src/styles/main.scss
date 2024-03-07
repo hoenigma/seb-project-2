@@ -1,15 +1,27 @@
 .card {
-    height: 100%;
+    height: 500px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    // flex-direction: column;
+    border: 2px solid grey;
 }
 
 .card-content {
     margin-top: auto;
 }
 
+.card-image {
+align-content: center;
+}
+
 .logo-emoji {
     margin: 0 10px;
+}
+
+.card-header-title {
+    border: 2px solid grey;
+    margin-left: 2px;
+    border-radius: 5px;
 }
 
 .form-link {
@@ -40,6 +52,9 @@ section.section {
     -webkit-text-stroke-color: rgb(222, 30, 30);
 }
 
+#searchBar {
+    margin-bottom: 50px;
+}
 
 $footer-background-color: #363636;
 $footer-padding: 2rem 1.5rem;
