@@ -37,7 +37,7 @@ section.section {
 }
 
 .hero{
-    background-image: url(src/images/Home-background.jpg) ;
+    background-image: url("src/images/Home-background.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -55,6 +55,11 @@ section.section {
 #searchBar {
     margin-bottom: 50px;
 }
+
+li{
+    padding: 50px auto;
+}
+
 
 $footer-background-color: #363636;
 $footer-padding: 2rem 1.5rem;
