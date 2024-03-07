@@ -4,7 +4,9 @@ import CharacterThumbnail from "./characterThumbnail";
 
 function CharacterList(){
   const [amiibo, setAmiibo] = React.useState(null)
+  const [search, setSearch] = React.useState('')
   console.log(amiibo)
+  console.log(search)
     
      async function fetchAmiibo() {
       const resp = await fetch("https://www.amiiboapi.com/api/amiibo/?amiiboSeries=Super Smash Bros.")
@@ -20,15 +22,34 @@ React.useEffect(() => {
   fetchAmiibo()
 }, [])
 
+function handleChange(e: any) {
+  setSearch(e.currentTarget.value)
+}
+
+function filterCharacters() {
+  return amiibo?.filter(dataTest => {
+    return dataTest.name.toLowerCase().includes(search.toLowerCase())
+  })
+}
 
 
 return (
   <section>
     <div>
-      {amiibo?.map((dataTest) => {
-        return <CharacterThumbnail
+      <input
+      placeholder="Search for an Amiibo"
+      onChange={handleChange}
+      value={search}
+      />
+    </div>
+    <div>
+      {/* we changed this from amiibo?.map */}
+      {filterCharacters()?.map((dataTest) => {
+        return <div>
+        <CharacterThumbnail
         name={dataTest.name}
        image={dataTest.image} />
+       </div> 
       })}
     </div>
   </section>
