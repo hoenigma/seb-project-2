@@ -25,7 +25,6 @@
 //game series
 //release? (object in an object)
 //Type
-//back button
 
 //-----THUMBNAIL CARD (for the list page)-Component------------//
 //Passed through from character List:
@@ -54,9 +53,8 @@
 
 //THURSDAY
 
-//1) get character display page working (by clicking) 
+//1) get character display page working (by clicking)✅
 //2) Search function
-//3) add load spinner
 //--------------MVP ACHIEVED------------------------//
 // add drop bar
 // style

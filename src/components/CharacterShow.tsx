@@ -36,9 +36,19 @@ if (!character) {
       <Link to="/characterlist">{"⬅ Back to all amiibo"}</Link>
       {character?.map((dataTest) => {
         return<>
-      <h2 className="title">{dataTest.name}</h2>
+      <h2 className="title">Character Name: {dataTest.name}</h2>
       <div>
       <img src={dataTest.image}/>
+      <p>Amiibo Series: {dataTest.amiiboSeries}</p>
+      <p>Game Series : {dataTest.gameSeries}</p>
+      <p>Type of Amiibo: {dataTest.type}</p>
+      <p> Region Release Date:
+        <ul><li> Austrailia:{dataTest.release.au}</li>
+        <li> Europe: {dataTest.release.eu}</li>
+        <li> Japan: {dataTest.release.jp}</li>
+        <li> USA: {dataTest.release.na} </li>
+        </ul> 
+      </p>
       </div>
       </>
     })}
