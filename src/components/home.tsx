@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <section>
-        <div>
-          <div>
-            <h2>Amiibo Search</h2>
-            <p>Details on all your favourite Amiibos!</p>
-            <Link to = {"/Characterlist"}>
+      <section className="hero is-fullheight-with-navbar">
+        <div className="hero-body">
+          <div className="container amiibo has-text-centered" id="intro">
+            <Link to={"/characterlist"}>
+              <h2 className="title">Amiibo Search</h2>
+              <p className="subtitle">Details on all your favourite Amiibos!</p>
             </Link>
           </div>
         </div>

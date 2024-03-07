@@ -24,9 +24,28 @@ section.section {
     min-height: calc(100vh - 11.25rem);
 }
 
+.hero{
+    background-image: url(src/images/Home-background.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.amiibo{
+    background-color: none;
+}
+
+#intro{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(222, 30, 30);
+}
+
+
 $footer-background-color: #363636;
 $footer-padding: 2rem 1.5rem;
 $box-padding: 1rem;
+
+
 
 
 
