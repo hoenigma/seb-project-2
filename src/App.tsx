@@ -13,6 +13,7 @@ return <Router>
   <Routes>
     <Route path='/' element={<Home />}/>
     <Route path="/characterlist" element={<CharacterList/>}/>
+    <Route path="/charactershow/:name" element={<CharacterShow/>}/>
   </Routes>
 </Router>
    
