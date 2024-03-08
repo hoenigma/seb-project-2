@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CharacterList from "./CharacterList";
 
-function CharacterThumbnail({ name, image }){
+interface CharacterList{
+name: string, image: string
+}
+
+function CharacterThumbnail({ name, image }:CharacterList ){
 return <div className="column-is-one-fifth">
     <Link to={`/charactershow/${name}`}>
     <div className="card">
