@@ -25,9 +25,16 @@ function CharacterShow() {
   }, [name]);
 
   //------------COME BACK FOR LOADING SPINNER-------------
-  if (!character) {
-    return <p>Character Loading...</p>;
-  }
+ if (!character) {
+  return <div className="columns is-mobile">
+    <div className="column is-14 is-offset-5">
+    <h1 className="title">Loading the Amiibo</h1>
+    <div className="column is-12 is-offset-1">
+    <div className="lds-dual-ring"></div>
+    </div>
+    </div>
+  </div>
+}
 
   return (
     <section className="section">
