@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import amiiboLogo from "../images/amiiboLogoTP.png";
+
 function Navbar() {
   return (
     <>
@@ -10,7 +10,7 @@ function Navbar() {
             <div className="container">
               <div className="navbar-brand">
                 <div className="navbar-item">
-                  <img src={amiiboLogo}/>
+                  <img src="../images/amiiboLogoTP.png"/>
                   </div>
                   <Link className="navbar-item" to="/">
                     Home
