@@ -10,7 +10,7 @@ function Navbar() {
             <div className="container">
               <div className="navbar-brand">
                 <div className="navbar-item">
-                  <img src="../images/amiiboLogoTP.png"/>
+                  <img src="../images/amiiboLogoTP.png" alt="logo"/>
                   </div>
                   <Link className="navbar-item" to="/">
                     Home
