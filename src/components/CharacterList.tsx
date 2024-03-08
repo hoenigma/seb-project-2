@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CharacterThumbnail from "./characterThumbnail";
 
+interface IAmiibo { name: string, image: string }
+type Amiibos = null | Array<IAmiibo>
+
 function CharacterList(){
-  const [amiibo, setAmiibo] = React.useState(null)
+  const [amiibo, setAmiibo] = React.useState(null as Amiibos)
   const [search, setSearch] = React.useState('')
   console.log(amiibo)
   console.log(search)

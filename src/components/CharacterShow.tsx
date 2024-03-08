@@ -2,10 +2,14 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import CharacterThumbnail from "./characterThumbnail";
 
+interface ICharacter { name: string, image: string, amiiboSeries: string, gameSeries: string, release: IRelease, type: string}
+interface IRelease { au: string, eu: string, jp: string, na: string}
+type Characters = null | Array<ICharacter>
+
 function CharacterShow() {
   const { name } = useParams();
 
-  const [character, setCharacter] = React.useState(null);
+  const [character, setCharacter] = React.useState(null as Characters);
   console.log(character);
 
   async function fetchCharacter() {
