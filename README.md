@@ -84,7 +84,7 @@ In the App.tsx the BrowserRouter was imported and the links to the Home componen
 
 The Navbar was created first as it will go on each page so the other components will need to be designed to include the Navbar. Using Bulma we followed the framework for making a Navbar and included a logo, link to home page and link to the character list page.
 
-![Navbar] (Images-ReadMe/Navbar.png)
+![Navbar](Images-ReadMe/Navbar.png)
 
 ### Homepage:
 
@@ -97,7 +97,7 @@ Firstly a useState was created to store and show the data.
 Then the data was received from the API using a fetch function
 To get the data from the array to display, the data had to be targeted by data.amiibo. This was worked out by using console logs to see how one character's information can be displayed and then applying it to the CharacterList function.
 
-![Getting-data-from-API] (Images-ReadMe/Fetch-api.png)
+![Getting-data-from-API](Images-ReadMe/Fetch-api.png)
 
 On the character list, we wanted the information to show the name and image which led to creating the CharacterThumbnail component.
 
@@ -106,7 +106,7 @@ We achieved this by filtering the data from the API to only show those which mat
 
 We started by creating another useState value. The setSearch is giving the value from the handle change function (see image below)
 
-![Search-function] (Images-ReadMe/Search-filter2.png)
+![Search-function](Images-ReadMe/Search-filter2.png)
 
 This function is saying the value of set search will be the value typed into the input (the search bar)
 
@@ -168,7 +168,7 @@ Another bug was the Image aspect ratio. The images stored within the API vary in
 
 ## Future Improvements
 
-EExtend to include all amiibo from the API. The API had characters from Animal crossing, Legend of Zelda etc. which weren;t on Super Smash Bros. WIth more time we would add these characters in.
+Extend to include all amiibo from the API. The API had characters from Animal crossing, Legend of Zelda etc. which weren;t on Super Smash Bros. WIth more time we would add these characters in.
 
 It would also be great to add a filter function that would include searching by game series using a drop down menu.
 
