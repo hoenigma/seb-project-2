@@ -9,7 +9,7 @@ It was decided to use the AmiiboAPI from https://www.amiiboapi.com/
 
 [Find Amiibo](https://main--chic-hamster-878f6b.netlify.app/)
 
-## Getting Starter Code
+## Getting Started
 
 To get this project up and running on your local machine, follow these steps:
 
