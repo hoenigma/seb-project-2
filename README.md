@@ -2,7 +2,7 @@
 
 ## Description
 
-Was given the task to create a muiltipage app from a public API of our choice. We have been learning react over the last couple of weeks and this porject was used to bring the skills we have learnt together.
+Was given the task to create a muiltipage app from a public API of our choice. We have been learning react over the last couple of weeks and this project was used to bring the skills we have learnt together.
 It was decided to use the AmiiboAPI from https://www.amiiboapi.com/
 
 ## Deployment Link
